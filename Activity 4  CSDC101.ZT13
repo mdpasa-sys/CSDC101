@@ -75,6 +75,43 @@ int main() {
 }
 
 
+
+Problem 4:
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int cups;
+    double Cupprice = 1.0;
+    double total = 0.0, discount = 0.0;
+    
+    cout<< "How many cups? ";
+    cin>> cups;
+
+    int n = 0;
+    while (n < cups) {
+        total += Cupprice, n++;
+    }
+
+    if (cups >= 5) {
+        discount = 0.10;
+    } 
+    else if (cups >= 10) {
+        discount = 0.20;
+    } 
+    else {
+        discount = 0.0;
+    }
+
+   cout << "Total cost: $" << total * (1 - discount) << endl;
+
+
+    return 0;
+}
+
+
+
 Problem 5:
 #include <iostream>
 using namespace std;
