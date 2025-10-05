@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    cout<< "What problem do you want to see? ";
+    cin>> choice;
+
+    switch(choice) {
+        case 1:
+            cout<< "*Basic pricing Decision Runs*" << endl;
+            break;
+        
+        case 2:
+            cout<< "*Problem 2*" << endl;
+            break;
+        
+        case 3:
+            cout<< "*Problem 3*" << endl;
+            break;
+        
+        case 4:
+            cout<< "*Problem 4*" << endl;
+            break;
+        
+        case 5:
+            cout<< "*Problem 5*" << endl; 
+            break;
+        
+        default:
+            cout<< "Invalid input.";
+            cout<< "Choose between a case 1 to 5." <<endl;
+    }
+
+    return 0;
+}
